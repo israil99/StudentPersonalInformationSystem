@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="602.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Table">
+    <children>
+        <ImageView fitHeight="623.0" fitWidth="1086.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+            <effect>
+                <DropShadow />
+            </effect>
+            <image>
+                <Image url="@../../images/573055.jpg" />
+            </image>
+        </ImageView>
+        <TableView fx:id="table" layoutX="294.0" layoutY="17.0" prefHeight="570.0" prefWidth="751.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="38.0" text="id" />
+                <TableColumn fx:id="firstnameCol" prefWidth="111.0" text="First name" />
+                <TableColumn fx:id="lastnameCol" prefWidth="109.0" text="Last name" />
+                <TableColumn fx:id="groupnameCol" prefWidth="79.0" text="Group" />
+                <TableColumn fx:id="emailCol" prefWidth="102.0" text="Email" />
+                <TableColumn fx:id="phoneCol" prefWidth="108.0" text="Phone" />
+                <TableColumn fx:id="genderCol" prefWidth="65.0" text="Gender" />
+                <TableColumn fx:id="dateofBirthCol" prefWidth="140.0" text="Date of Birth" />
+            </columns>
+            <effect>
+                <DropShadow />
+            </effect>
+        </TableView>
+        <JFXButton fx:id="addButton" layoutX="12.0" layoutY="547.0" prefHeight="39.0" prefWidth="245.0" style="-fx-background-color: #eaeaea;" text="Add">
+            <effect>
+                <DropShadow />
+            </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+        </JFXButton>
+        <JFXTextField fx:id="SignUpPhone" focusColor="#a3f0ff" layoutX="13.0" layoutY="306.0" maxWidth="261.0" minWidth="236.0" prefHeight="39.0" prefWidth="261.0" promptText="Phone" style="-fx-prompt-text-fill:#898989;" unFocusColor="BLACK" />
+        <JFXTextField fx:id="groupName_field" focusColor="#a3f0ff" layoutX="13.0" layoutY="345.0" maxWidth="261.0" minWidth="236.0" prefHeight="39.0" prefWidth="261.0" promptText="group name" style="-fx-prompt-text-fill:#898989;" unFocusColor="BLACK" />
+        <JFXTextField fx:id="SignUpEmail" focusColor="#a3f0ff" layoutX="13.0" layoutY="267.0" maxWidth="261.0" minWidth="261.0" prefHeight="39.0" prefWidth="261.0" promptText="Email" style="-fx-prompt-text-fill:#898989;" unFocusColor="BLACK" />
+        <JFXTextField fx:id="SignUpLastName" focusColor="#a3f0ff" layoutX="13.0" layoutY="228.0" maxWidth="261.0" minWidth="261.0" prefHeight="39.0" prefWidth="261.0" promptText="last name" style="-fx-prompt-text-fill:#898989;" unFocusColor="BLACK" />
+        <JFXTextField fx:id="SignUpName" focusColor="#a3f0ff" layoutX="13.0" layoutY="189.0" maxWidth="261.0" minWidth="261.0" prefHeight="39.0" prefWidth="261.0" promptText="first name" style="-fx-prompt-text-fill:#898989;" unFocusColor="#030000" />
+        <JFXDatePicker fx:id="dobField" defaultColor="#464646" layoutX="13.0" layoutY="384.0" prefHeight="39.0" prefWidth="261.0" promptText="date of birth" style="-fx-prompt-text-fill:#464646;" />
+        <JFXRadioButton fx:id="genderMale" layoutX="3.0" layoutY="436.0" mnemonicParsing="false" text="Male" />
+        <JFXRadioButton fx:id="genderFemale" layoutX="95.0" layoutY="436.0" mnemonicParsing="false" text="Female" />
+
+        <ImageView fitHeight="92.0" fitWidth="86.0" layoutX="109.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/icon.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+      <JFXButton fx:id="deleteButton" layoutX="14.0" layoutY="492.0" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #eaeaea;" text="Delete">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="loadTableBtn" layoutX="143.0" layoutY="492.0" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #eaeaea;" text="Load Table">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+
+    </children>
+</AnchorPane>

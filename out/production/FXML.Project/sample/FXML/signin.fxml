@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="1064.0" style="-fx-background-color: #2369b5;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Controller">
+    <children>
+        <ImageView fitHeight="617.0" fitWidth="1064.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/573055.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="368.0" layoutY="206.0" prefHeight="86.0" prefWidth="329.0" style="-fx-background-color: #ffffff;">
+            <children>
+            <ImageView fitHeight="185.0" fitWidth="337.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/573055.jpg" />
+               </image>
+            </ImageView>
+      
+                <JFXButton fx:id="loginTableButtom" cancelButton="true" layoutX="-5.0" layoutY="3.0" onAction="#goToScreen2" prefHeight="178.0" prefWidth="329.0" ripplerFill="#a3f0ff" text="Start">
+      
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="#4fa4c4" />
+                                <Stop color="#4fa4c4" offset="0.007662835249042145" />
+                                <Stop color="#57ffd8" offset="0.08429118773946355" />
+                                <Stop color="#b4e2ee" offset="0.6666666666666662" />
+                        <Stop color="#66e0ff" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+            </JFXButton>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <Label layoutX="411.0" layoutY="-14.0" prefHeight="128.0" prefWidth="298.0" text="Welcome to  " textFill="WHITE">
+            <font>
+                <Font size="36.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Label>
+        <Label layoutX="349.0" layoutY="64.0" prefHeight="128.0" prefWidth="421.0" text="Students Information System" textFill="WHITE">
+            <font>
+                <Font size="26.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Label>
+    </children>
+</AnchorPane>
